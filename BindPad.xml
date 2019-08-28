@@ -466,51 +466,6 @@
                     </OnLeave>
                 </Scripts>
             </Button>
-            <CheckButton name="BindPadProfileTab1" inherits="BindPadProfileTabTemplate" hidden="false" id="1">
-                <Anchors>
-                    <Anchor point="TOPLEFT" relativePoint="TOPRIGHT">
-                        <Offset>
-                            <AbsDimension x="-32" y="-85" />
-                        </Offset>
-                    </Anchor>
-                </Anchors>
-            </CheckButton>
-            <CheckButton name="BindPadProfileTab2" inherits="BindPadProfileTabTemplate" hidden="false" id="2">
-                <Anchors>
-                    <Anchor point="TOPLEFT" relativeTo="BindPadProfileTab1" relativePoint="BOTTOMLEFT">
-                        <Offset>
-                            <AbsDimension x="0" y="-22" />
-                        </Offset>
-                    </Anchor>
-                </Anchors>
-            </CheckButton>
-            <CheckButton name="BindPadProfileTab3" inherits="BindPadProfileTabTemplate" hidden="false" id="3">
-                <Anchors>
-                    <Anchor point="TOPLEFT" relativeTo="BindPadProfileTab2" relativePoint="BOTTOMLEFT">
-                        <Offset>
-                            <AbsDimension x="0" y="-22" />
-                        </Offset>
-                    </Anchor>
-                </Anchors>
-            </CheckButton>
-            <CheckButton name="BindPadProfileTab4" inherits="BindPadProfileTabTemplate" hidden="false" id="4">
-                <Anchors>
-                    <Anchor point="TOPLEFT" relativeTo="BindPadProfileTab3" relativePoint="BOTTOMLEFT">
-                        <Offset>
-                            <AbsDimension x="0" y="-22" />
-                        </Offset>
-                    </Anchor>
-                </Anchors>
-            </CheckButton>
-            <CheckButton name="BindPadProfileTab5" inherits="BindPadProfileTabTemplate" id="5">
-                <Anchors>
-                    <Anchor point="TOPLEFT" relativeTo="BindPadProfileTab4" relativePoint="BOTTOMLEFT">
-                        <Offset>
-                            <AbsDimension x="0" y="-22" />
-                        </Offset>
-                    </Anchor>
-                </Anchors>
-            </CheckButton>
             <CheckButton name="$parentCharacterButton" inherits="UICheckButtonTemplate">
                 <Size>
                     <AbsDimension x="20" y="20" />
