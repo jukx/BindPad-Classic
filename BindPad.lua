@@ -29,7 +29,7 @@ UIPanelWindows["BindPadFrame"] = { area = "left", pushable = 8, whileDead = 1 };
 UIPanelWindows["BindPadMacroFrame"] = { area = "left", pushable = 9, whileDead = 1 };
 
 local BINDPAD_MAXSLOTS_DEFAULT = 42;
-local BINDPAD_MAXPROFILETAB = 5;
+local BINDPAD_MAXPROFILETAB = 1;
 local BINDPAD_GENERAL_TAB = 1;
 local BINDPAD_SPECIFIC_1ST_TAB = 2;
 local BINDPAD_SAVEFILE_VERSION = 1.3;
@@ -188,11 +188,11 @@ function BindPadFrame_OnShow()
     BindPadFrameShowHotkeyButton:SetChecked(BindPadVars.showHotkey);
 
     -- Update profile tab
-    for i = 1, BINDPAD_MAXPROFILETAB, 1 do
-        local profiletab = _G["BindPadProfileTab"..i];
-        profiletab:SetChecked((BindPadCore.GetCurrentProfileNum() == i));
-        BindPadProfileTab_OnShow(profiletab);
-    end
+    --for i = 1, BINDPAD_MAXPROFILETAB, 1 do
+        --local profiletab = _G["BindPadProfileTab"..i];
+        --profiletab:SetChecked((BindPadCore.GetCurrentProfileNum() == i));
+        --BindPadProfileTab_OnShow(profiletab);
+    --end
 
     local tabInfo = BindPadCore.GetTabInfo(BindPadVars.tab);
     BindPadCore.CreateBindPadSlot(tabInfo.numSlot);
