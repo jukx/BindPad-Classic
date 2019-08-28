@@ -166,11 +166,7 @@ function BindPadFrame_OnShow()
         BindPadVars.tab = 1;
     end
 
-    if BindPadVars.tab == 1 then
-        BindPadFrameTitleText:SetText(BINDPAD_TITLE);
-    else
-        BindPadFrameTitleText:SetText(_G["BINDPAD_TITLE_"..BindPadCore.GetCurrentProfileNum()]);
-    end
+    BindPadFrameTitleText:SetText(BINDPAD_TITLE);
     PanelTemplates_SetTab(BindPadFrame, BindPadVars.tab);
 
     -- Update character button

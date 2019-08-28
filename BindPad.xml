@@ -194,7 +194,7 @@
                         <Anchor point="BOTTOMRIGHT" />
                     </Anchors>
                 </Texture>
-                <FontString name="BindPadFrameTitleText" inherits="GameFontNormal" text="BINDPAD_TITLE_1">
+                <FontString name="BindPadFrameTitleText" inherits="GameFontNormal" text="BINDPAD_TITLE">
                     <Anchors>
                         <Anchor point="TOP" relativeTo="$parent">
                             <Offset>
